@@ -1,13 +1,13 @@
 class Division{
-    constructor(x, y, width, height){
+    constructor(x, y, w, h){
         var options ={
           isStatic: true
         }
-        this.body = Bodies.rectangle(x, y, width, height, options);
+        this.body = Bodies.rectangle(x, y, w, h, options);
         this.color = color(random(0, 255), random(0,255), random(0, 255));
 
-        this.width = width;
-        this.height = height;
+        this.w = w;
+        this.h = h;
         World.add(world, this.body);
     }
     display(){
